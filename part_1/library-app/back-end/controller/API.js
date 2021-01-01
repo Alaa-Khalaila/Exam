@@ -8,5 +8,11 @@ app.post("/books", (req, res){
     db.query(query, data, (result, err) => {
         if (err) { throw err }
     })
+});
 
+app.get("/books", (req, res) => {
+    const query = `select * from books`
+    db.query(query, (result, err) => {
+        if (err) { throw err }
+    })
 })
