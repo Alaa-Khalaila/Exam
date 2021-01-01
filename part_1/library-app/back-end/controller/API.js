@@ -28,4 +28,15 @@ app.get("/books/:book_id", (req, res) => {
         if (err) { throw err }
         res.json(result)
     })
-})
+});
+
+app.delete("/books/:book_id",(req,res)=>{
+    const { book_id } = req.params
+    const query = `delete from books where book_id = ?`
+    const data = [book_id];
+    db.query(query, data, (result, err) => {
+        if (err) { throw err }
+        res.json(result)
+    })
+});
+
