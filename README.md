@@ -37,3 +37,6 @@
 - [MONGOOSE](https://mongoosejs.com)
 - [MYSQL](https://www.npmjs.com/package/mysql2)
 - [JWT](https://jwt.io)
+
+
+<!-- jouza -->
