@@ -6,6 +6,8 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import AddBook from './components/AddBook';
+import SpecBook from './components/SpecBook';
 
 export default class App extends Component {
   constructor(props) {
@@ -17,7 +19,13 @@ export default class App extends Component {
       <div>
         <Router>
           <Route path="/library/create_book">
-            <button>submit</button>
+            <AddBook/>
+          </Route>
+          <Route exact path="/library">
+
+          </Route>
+          <Route exact path="/library/:book_id">
+            <SpecBook/>
           </Route>
         </Router>
       </div>
