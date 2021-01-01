@@ -14,11 +14,11 @@ use [databasename]
 
 Q3) What is the query for creating a new database called `meraki`?
 
-create meraki database
+create database meraki 
 
 Q4) What is the query for deleting a database called `meraki`?
 
-delete meraki database
+drop database meraki
 
 Q5) What is the query for displaying all the tables for a database called `meraki`?
 
